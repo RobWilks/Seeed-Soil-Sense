@@ -13,9 +13,13 @@ https://github.com/RobWilks/Seeed-Soil-Sense/blob/main/tinyWatchdogVoltageSwitch
 and powered using 2x 18650 lithium ion batteries in series (~1500 mAh).
 
 Standby current: ~90 microA
+
 Average current when board and sensor powered on: 37 mA
+
 Note peak current when transmitting 100-200 mA, sensor current draw 6.3 mA
+
 Duration of on cycle: 3900 msec
+
 Estimated battery lifetime: 186 d
 
 The Arduino framework was used to develop the firmware for the board and watchdog timer.  The project libraries are in separate directories:
