@@ -4,7 +4,7 @@ Code and watchdog circuit to integrate [Seeed industrial soil sensor](https://fi
 
 The soil sensor connects to a [Lilygo T-CAN485 board](https://github.com/Xinyuan-LilyGO/T-CAN485/blob/arduino-esp32-libs_v3.0.1/README.md) via RS485 and Modbus protocol:
 
-The board has a ESP32 microcontroller to manage the bus and transmit soil moisture, conductivity and temperature data via Bluetooth advertising packets
+The board has a ESP32 microcontroller to manage the bus and transmit soil moisture, conductivity and temperature data via Bluetooth advertising packets.
 The data are measured at a low frequency of 10 minutes with the board and sensor powered off between measurements.
 Power management is by a separate [watchdog circuit](TCAN_Soil_Sense_circuit.png) using a [ATTiny85 microcontroller](https://ww1.microchip.com/downloads/en/devicedoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf) and P-channel MOSFET switch:
 built on a small [stripboard breakout](tinyWatchdogVoltageSwitchV3.png) and powered using 2x 18650 lithium ion batteries in series (~1500 mAh).
@@ -25,11 +25,11 @@ Peak current when transmitting: 100-200 mA, sensor current: 6.3 mA
 
 Duration of on cycle: 3900 msec
 
-Estimated battery lifetime: 186 d
+Estimated battery lifetime with 10 minute measurement interval: 186 d
 
 
 =============================================
 
 ## INSTALLATION
 
-Sensor buried approximately 15 cm deep (see photos).
+Sensor buried approximately 15 cm deep in soil (see photos).
